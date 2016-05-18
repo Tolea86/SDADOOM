@@ -12,6 +12,8 @@ int main(){
     char name[200]; //Array of char which stores the name of each crossroad separately
     int i = 0, j = 0, crossroad_initial, crossroad_final; //i,j used in for loops, crossroad_initial,crossroad_final used to store the number of crossroad where are person and where he wants to go
     int number_of_crossroads = 3; //integer variable which stores the number of the crossroads in file
+    int infinity = 1000000; //integer which holds a very big number because programs did not have infinity
+    int array[152] = {[0 ... 151] = infinity}; //Array of infinities, representing the distances from the selected point to every node in our graph
 
     //Reading the file line by line and storing lines into Array_of_cross_roads
     while(!feof(cross_road_file_pointer)){
@@ -71,4 +73,3 @@ int main(){
         //PARALLEL PROCESSING
     }
 }
-
